@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/austria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@color/imperial_red" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@color/imperial_red" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/austria_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:text="@string/austria"
+            app:layout_constraintEnd_toEndOf="@+id/austria"
+            app:layout_constraintStart_toStartOf="@+id/austria"
+            app:layout_constraintTop_toBottomOf="@+id/austria" />
+
+        <LinearLayout
+            android:id="@+id/poland"
+            style="@style/LayoutDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@color/crimson" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/poland_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:text="@string/poland"
+            app:layout_constraintEnd_toEndOf="@+id/poland"
+            app:layout_constraintStart_toStartOf="@+id/poland"
+            app:layout_constraintTop_toBottomOf="@+id/poland" />
+
+        <LinearLayout
+            android:id="@+id/italy"
+            style="@style/LayoutDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/austria_tv">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:background="@color/philippine_green" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:background="@color/anti_flash_white" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:background="@color/fire_engine_red" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/italy"
+            app:layout_constraintEnd_toEndOf="@+id/italy"
+            app:layout_constraintStart_toStartOf="@+id/italy"
+            app:layout_constraintTop_toBottomOf="@+id/italy" />
+
+        <LinearLayout
+            android:id="@+id/colombia"
+            style="@style/LayoutDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poland_tv">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@color/metallic_yellow" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/dark_powder_blue" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/philippine_red" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/colombia_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colombia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/colombia"
+            app:layout_constraintTop_toBottomOf="@+id/italy" />
+
+        <LinearLayout
+            android:id="@+id/madagascar"
+            style="@style/LayoutDefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/italy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/coral_red" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/philippine_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/madagascar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/madagascar"
+            app:layout_constraintEnd_toEndOf="@+id/madagascar"
+            app:layout_constraintStart_toStartOf="@+id/madagascar"
+            app:layout_constraintTop_toBottomOf="@+id/madagascar" />
+
+        <LinearLayout
+            android:id="@+id/thailand"
+            style="@style/LayoutDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colombia_tv">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:background="@color/vivid_burgundy" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:background="@color/cultured" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@color/space_cadet" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="@color/cultured" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="@color/vivid_burgundy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thailand_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thailand"
+            app:layout_constraintEnd_toEndOf="@+id/thailand"
+            app:layout_constraintStart_toStartOf="@+id/thailand"
+            app:layout_constraintTop_toBottomOf="@+id/thailand" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/denmark"
+            style="@style/LayoutDefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/layout_outline"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/madagascar_tv">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:background="@color/ncs_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="18dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="18dp"
+                android:layout_height="120dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintHorizontal_bias="0.316"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/denmark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/denmark"
+            app:layout_constraintEnd_toEndOf="@+id/denmark"
+            app:layout_constraintStart_toStartOf="@+id/denmark"
+            app:layout_constraintTop_toBottomOf="@+id/denmark" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/switzerland"
+            style="@style/LayoutDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_outline"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/thailand"
+            app:layout_constraintTop_toBottomOf="@+id/thailand_tv">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/maximum_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="24dp"
+                android:layout_height="72dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="72dp"
+                android:layout_height="24dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/switzerland_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switzerland"
+            app:layout_constraintEnd_toEndOf="@+id/switzerland"
+            app:layout_constraintStart_toStartOf="@+id/switzerland"
+            app:layout_constraintTop_toBottomOf="@+id/switzerland" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
